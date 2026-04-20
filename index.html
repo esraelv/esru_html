@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Boxing Man - Middle Front View</title>
     <style>
         .image-title{
             font-family: arial;
@@ -11,49 +11,127 @@
             justify-content: center;
             width: 300px;
             margin-top:10px;
-    }
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 24px;
+            color: #1a1a2e;
+        }
         .properties{
             background-color: red;
             text-align: center;
             text-decoration:underline ;
-    }
-    .container {
-        display: flex;
-        justify-content: center;
-        height: vh;
-}
-.camera-man{
-    background-color: rgb(172, 172, 208);
-    height: 30;
-    width: 60;
-    font-size: 30px;
-    cursor: pointer;
-}
-.tokko {
-    width: 300px;
-    height: 200px;
-    object-fit: contain;
-    border: solid;
-}
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-weight: bold;
+            color: white;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+        .properties:hover {
+            transform: scale(1.05);
+            background-color: darkred;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            margin-top: 20px;
+        }
+        .camera-man{
+            background-color: rgb(172, 172, 208);
+            height: auto;
+            width: auto;
+            font-size: 18px;
+            cursor: pointer;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+        .camera-man:hover {
+            transform: scale(1.05);
+            background-color: rgb(140, 140, 180);
+        }
+        .tokko {
+            width: 400px;
+            height: 300px;
+            object-fit: cover;
+            border: solid 3px #ffd700;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+        .tokko:hover {
+            transform: scale(1);
+        }
+        body {
+            background: linear-gradient(135deg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .card {
+            background: white;
+            border-radius: 30px;
+            padding: 25px 30px 35px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            max-width: 550px;
+            width: 100%;
+            text-align: center;
+        }
+        .button-group {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 25px;
+            flex-wrap: wrap;
+        }
+        .IMAGE-view {
+            text-align: center;
+            font-family: Arial;
+            font-size: 14px;
+            color: #555;
+            background: #f0f0f0;
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            margin: 10px auto;
+            width: fit-content;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-    <img src="photo_2025-05-05_12-43-04.jpg" class="tokko">
-</div>
+    <div class="card">
+        <div class="container">
+            <img src="photo_2025-05-05_12-43-04.jpg" class="tokko" alt="Boxing Man">
+        </div>
 
-    <p class="image-title">
-    A BOXING MAN
-</p>
-<p class="IMAGE-view">
-    300,300(PX) Views;
-</p>
+        <p class="image-title">
+            🥊 A BOXING MAN 🥊
+        </p>
+        
+        <p class="IMAGE-view">
+            📸 400x300 (PX) Front View 👊
+        </p>
 
-<button class="camera-man">
-    CM:ESRAEL REGASA &#10004;
-</button>
+        <div class="button-group">
+            <button class="camera-man">
+                📷 CM: ESRAEL REGASA ✓
+            </button>
 
-<button class="properties">
-    DATE 04/07/2026    &#64&#67
-</button>
+            <button class="properties">
+                📅 DATE 04/07/2026 &nbsp; ©️
+            </button>
+        </div>
+    </div>
+
+</body>
 </html>
